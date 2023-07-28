@@ -1,0 +1,14 @@
+{
+  "name": "nimona-archive",
+  "version": "0.0.1",
+  "description": "A fanmade archive for the webcomic Nimona!",
+  "author": "Denperidge",
+  "scripts": {
+    "start": "parcel serve src/index.pug",
+    "build": "parcel build src/index.pug"
+  },
+  "devDependencies": {
+    "@parcel/transformer-pug": "^2.9.3",
+    "parcel": "^2.9.3"
+  }
+}

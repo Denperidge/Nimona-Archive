@@ -1,0 +1,8 @@
+extends ../template.pug
+
+
+block content
+    - let chapter = chapters[0];
+    each page in chapter
+        img(src=page.image)
+        p=page.date
