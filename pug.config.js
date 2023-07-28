@@ -1,8 +1,9 @@
 const fs = require("fs");
 
-let chapters = []
+let chapters = {};
 fs.readdirSync("extracted/").forEach((chapterName) => {
     const chapterDir = "extracted/" + chapterName;
+    const chapterNumber = chapterName.replace(/[^\d]+/, "");
 
     let chapter = [];
 
@@ -18,12 +19,10 @@ fs.readdirSync("extracted/").forEach((chapterName) => {
         chapter.push(pageData);
     });
 
-    chapters.push(chapter);
+    chapters[chapterNumber] = chapter;
     
     
 });
-
-
 
 module.exports = {
     locals: {

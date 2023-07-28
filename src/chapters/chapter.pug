@@ -5,7 +5,7 @@ block title
     title Chapter #{chapter} #{appendTitle}
 
 block content
-    - let pages = chapters[chapter - 1]
+    - let pages = chapters[chapter]
     each page in pages
         img(src=page.image)
         p=page.date
