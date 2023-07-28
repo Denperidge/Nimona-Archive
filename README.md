@@ -3,24 +3,31 @@
 This is the repository for the Nimona Archive! The info here will be exclusively for explaining how the site is generated and why it works like it does. For info on the project itself, you can check the website (or its corresponding files in this repo!)
 
 **Project goals:**
-- [x] Archive all comics in pure web form*
-- [x] Parse the web files into uniform, machine-readable data*
-- [x] Use that data to generate a website
+(Completed goals are marked with ✔)
 
-- [ ] Add alt text to *every* page*
-- [ ] Create an alt text glossary for the characters
-- [ ] ... which is loaded in every page where the character appears
-
-- [x] Remove N.D.'s deadname and replace it with their professional name (N.D.)*
-- [ ] Add a notice to support the comics print release, N.D.'s stuff & (a) charit(y/ies)**
-
-- [ ] Research & apply aria
-- [ ] Ensure proper tab indexes
-
-- [ ] Create theme: cinematic & static movie background
-- [ ] Create theme: custom made repeating tile from the webcomic
-- [ ] Create theme: original website
-- [ ] Create theme: minimal
+| Status | Goal |
+| ------ | ---- |
+|| **Archival** |
+| ✔ | Archive all comics in pure web form*  |
+| ✔ | Parse the web files into uniform, machine-readable data* |
+| ✔ | Use that data to generate a website |
+||
+|| **Accessibility** |
+|  | Add alt text to *every* page* |
+|  | Create an alt text glossary for the characters |
+|  | ... which is loaded in every page where the character appears |
+|  | Research & apply aria |
+|  | Ensure proper tab indexes |
+||
+|| **Support the original release & values as well as possible** |
+| ✔ | Remove N.D.'s deadname and replace it with their professional name (N.D.)* |
+|  | Add a notice to support the comics print release, N.D.'s stuff & (a) charit(y/ies)** |
+||
+|| **Make it cute** |
+|  | Create theme: cinematic & static movie background |
+|  | Create theme: custom made repeating tile from the webcomic |
+|  | Create theme: original website |
+|  | Create theme: minimal |
 
 *\*: These goals will be/have been accomplished in a seperate repository*
 *\*\*: Perhaps mermaids (trans youth) or trevor (homeless queer people)? Check if N.D. is fond of any specific charities*
