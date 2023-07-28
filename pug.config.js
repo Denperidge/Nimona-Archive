@@ -27,6 +27,7 @@ fs.readdirSync("extracted/").forEach((chapterName) => {
 
 module.exports = {
     locals: {
-        chapters: chapters
+        chapters: chapters,
+        appendTitle: "| Nimona"
     }
 }

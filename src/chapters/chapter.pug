@@ -1,0 +1,11 @@
+extends ../template.pug
+
+block title
+    block variables
+    title Chapter #{chapter} #{appendTitle}
+
+block content
+    - let pages = chapters[chapter - 1]
+    each page in pages
+        img(src=page.image)
+        p=page.date
