@@ -11,6 +11,7 @@ This is the repository for the Nimona Archive! The info here will be exclusively
 | ✔ | Archive all comics in pure web form*  |
 | ✔ | Parse the web files into uniform, machine-readable data* |
 | ✔ | Use that data to generate a website |
+|  | Optionally display the authors' upload comments written under some/most pages |
 ||
 || **Accessibility** |
 |  | Add alt text to *every* page* |
