@@ -11,7 +11,7 @@ This is the repository for the Nimona Archive! The info here will be exclusively
 | ✔ | Archive all comics in pure web form*  |
 | ✔ | Parse the web files into uniform, machine-readable data* |
 | ✔ | Use that data to generate a website |
-|  | Optionally display the authors' upload comments written under some/most pages |
+| ✔ | Display the authors' upload comments written under some/most pages |
 ||
 || **Accessibility** |
 |  | Add alt text to *every* page* |
@@ -24,11 +24,12 @@ This is the repository for the Nimona Archive! The info here will be exclusively
 | ✔ | Remove N.D.'s deadname and replace it with their professional name (N.D.)* |
 | ✔ | Add a notice to support the comics print release, N.D.'s stuff & (a) charit(y/ies)** |
 ||
-|| **Make it cute** |
+|| **Customizability** |
 |  | Create theme: cinematic & static movie background |
 |  | Create theme: custom made repeating tile from the webcomic |
 |  | Create theme: original website |
 |  | Create theme: minimal |
+|  | Allow hiding the authors' comments |
 
 *\*: These goals will be/have been accomplished in a seperate repository*
 *\*\*: Perhaps mermaids (trans youth) or trevor (homeless queer people)? Check if N.D. is fond of any specific charities*
