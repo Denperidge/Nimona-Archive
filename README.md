@@ -22,7 +22,7 @@ This is the repository for the Nimona Archive! The info here will be exclusively
 ||
 || **Support the original release & values as well as possible** |
 | ✔ | Remove N.D.'s deadname and replace it with their professional name (N.D.)* |
-|  | Add a notice to support the comics print release, N.D.'s stuff & (a) charit(y/ies)** |
+| ✔ | Add a notice to support the comics print release, N.D.'s stuff & (a) charit(y/ies)** |
 ||
 || **Make it cute** |
 |  | Create theme: cinematic & static movie background |
