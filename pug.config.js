@@ -28,9 +28,8 @@ fs.readdirSync("extracted/").forEach((chapterName) => {
 
         const jsonPath = chapterDir + "/" + fileName;
         const pageData = JSON.parse(fs.readFileSync(jsonPath, {encoding: "utf-8"}));
-        const base64 = fs.readFileSync(jsonPath.replace(".json", ".jpg"), "base64");
 
-        pageData.image = `data:image/jpg;base64,${base64}`;
+        pageData.image = "../../" + jsonPath.replace(".json", ".jpg");
 
         chapter.push(pageData);
     });
