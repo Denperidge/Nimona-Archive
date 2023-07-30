@@ -5,7 +5,10 @@ block title
     title Chapter #{chapter} #{appendTitle}
 
 block content
-    - let pages = chapters[chapter]
-    each page in pages
-        img(src=page.image)
-        p=page.date
+    main#chapter
+        - let pages = chapters[chapter]
+        each page in pages
+            div.page
+                img(src=page.image)
+                p=page.date
+                div !{page.comment}

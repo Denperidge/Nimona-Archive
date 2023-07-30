@@ -5,17 +5,28 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         block title
             title Nimona
+        link(rel="stylesheet" href="/src/stylesheet.scss")
     body
         nav
-            a(href="/src/chapters/chapter-1.pug") Chapter 1
-            a(href="/src/chapters/chapter-2.pug") Chapter 2
-            a(href="/src/chapters/chapter-3.pug") Chapter 3
-            a(href="/src/chapters/chapter-4.pug") Chapter 4
-            a(href="/src/chapters/chapter-5.pug") Chapter 5
-            a(href="/src/chapters/chapter-6.pug") Chapter 6
-            a(href="/src/chapters/chapter-7.pug") Chapter 7
-            a(href="/src/chapters/chapter-8.pug") Chapter 8
-            a(href="/src/chapters/chapter-9.pug") Chapter 9
-            a(href="/src/chapters/chapter-10.pug") Chapter 10
-            a(href="/src/chapters/chapter-11.pug") Chapter 11
+            ul
+                -
+                    let links = [
+                        ["/src/index.pug", "Home"], 
+                        ["/src/chapters/chapter-1.pug", "Chapter 1"],
+                        ["/src/chapters/chapter-2.pug", "Chapter 2"],
+                        ["/src/chapters/chapter-3.pug", "Chapter 3"],
+                        ["/src/chapters/chapter-4.pug", "Chapter 4"],
+                        ["/src/chapters/chapter-5.pug", "Chapter 5"],
+                        ["/src/chapters/chapter-6.pug", "Chapter 6"],
+                        ["/src/chapters/chapter-7.pug", "Chapter 7"],
+                        ["/src/chapters/chapter-7.pug", "Chapter 8"],
+                        ["/src/chapters/chapter-8.pug", "Chapter 9"],
+                        ["/src/chapters/chapter-10.pug", "Chapter 10"],
+                        ["/src/chapters/chapter-11.pug", "Chapter 11"],
+                        ]
+
+                each link in links
+                    li
+                        a(href=link[0])=link[1]
+            
         block content
