@@ -6,8 +6,8 @@ html(lang="en")
         block title
             title Nimona
         link(rel="stylesheet" href="/src/stylesheet.scss")
-        //link(rel="stylesheet" href="/src/themes/minimal.scss")
-        link(rel="stylesheet" href="/src/themes/movie.scss")
+        link(rel="stylesheet" href="/src/themes/minimal.scss").theme#minimal
+        link(rel="stylesheet" href="/src/themes/movie.scss" disabled=true).theme#movie
         link(rel="shortcut icon", href="/src/themes/favicon.ico", type="image/x-icon")
     body
         video#background(autoplay=true, loop=true, muted=true)
@@ -35,3 +35,5 @@ html(lang="en")
                         a(href=link[0])=link[1]
             
         block content
+
+        script(src="/src/themes/themes.js")
