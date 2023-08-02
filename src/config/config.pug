@@ -1,4 +1,4 @@
-extends template.pug 
+extends ../template.pug 
 
 block content 
     
@@ -12,6 +12,8 @@ block content
                 input(type="radio" name="theme" id=`input-${theme}` value=theme).theme-selector
                 label(for=`input-${theme}`)=theme
 
+
+    script(src="/src/config/config.js")
     
 
     

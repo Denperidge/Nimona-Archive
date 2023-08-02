@@ -12,6 +12,8 @@ html(lang="en")
             link(rel="stylesheet" href=`/src/themes/${theme}/${theme}.scss` id=theme).theme
             img(src=`/src/themes/${theme}/${theme}.ico` id=`${theme}-favicon`).favicon
 
+        script(src="/src/themes/themes.js")
+
     body
         video#background(autoplay=true, loop=true, muted=true)
             source(src="/src/themes/movie/movie.mp4" type="video/mp4")
@@ -20,7 +22,7 @@ html(lang="en")
                 -
                     let links = [
                         ["/src/index.pug", "Home"], 
-                        ["/src/themes.pug", "Themes"], 
+                        ["/src/config/config.pug", "Themes"], 
                         ["/src/chapters/chapter-1.pug", "Chapter 1"],
                         ["/src/chapters/chapter-2.pug", "Chapter 2"],
                         ["/src/chapters/chapter-3.pug", "Chapter 3"],
@@ -42,5 +44,4 @@ html(lang="en")
         
         block content
 
-        script(src="/src/themes/themes.js")
         script(src="/src/themes/background.js")
