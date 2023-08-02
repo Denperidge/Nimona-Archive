@@ -9,6 +9,7 @@ function applyTheme(enabledTheme) {
     for (let i = 0; i < themes.length; i++) {
         let theme = themes[i];
         if (theme == enabledTheme) {
+            document.getElementById("favicon").href = document.getElementById(theme + "-favicon").src;
             disableTheme(theme, false);
         } else {
             disableTheme(theme, true);
@@ -17,7 +18,6 @@ function applyTheme(enabledTheme) {
 }
 
 function disableTheme(id, disable=true) {
-    document.getElementById("favicon").href = document.getElementById(id + "-favicon").src;
     document.getElementById(id).disabled = disable;
 }
 
