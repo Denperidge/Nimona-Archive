@@ -1,0 +1,35 @@
+#background {
+    z-index: -5;
+    top: 0; left: 0; right:0; bottom: 0;
+
+    object-fit: cover;
+    object-position: center;
+
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+}
+
+body {
+    color: #fff4ee;
+    background-image: url("/src/themes/movie.png");
+    background-position: center;
+}
+
+a {
+    &:link {
+        color: #BE747A;
+    }
+
+    &:visited {
+        color: #91444A;
+    }
+
+    &:hover {
+        color: #C6AF8C;
+    }
+
+    &:active {
+        color: #949BA3;
+    }
+}
