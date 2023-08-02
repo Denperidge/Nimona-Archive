@@ -11,6 +11,13 @@ block content
             each theme in themes
                 input(type="radio" name="theme" id=`input-${theme}` value=theme).theme-selector
                 label(for=`input-${theme}`)=theme
+            
+            each show in [["comments", "Show author's comments"], ["dates", "Show page date"]]
+                - let id=show[0];
+                - let text=show[1];
+
+                input(type="checkbox" name=id id=id).show
+                label(for=id)=text
 
 
     script(src="/src/config/config.js")

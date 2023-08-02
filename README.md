@@ -30,7 +30,7 @@ This is the repository for the Nimona Archive! The info here will be exclusively
 |  | Create theme: custom made repeating tile from the webcomic |
 |  | Create theme: original website |
 | ✔ | Create theme: minimal |
-|  | Allow hiding the authors' comments |
+| ✔ | Allow hiding the authors' comments |
 
 *\*: These goals will be/have been accomplished in a seperate repository*
 *\*\*: Perhaps mermaids (trans youth) or trevor (homeless queer people)? Check if N.D. is fond of any specific charities*

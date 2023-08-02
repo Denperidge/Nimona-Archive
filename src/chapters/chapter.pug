@@ -10,5 +10,7 @@ block content
         each page in pages
             div.page
                 img(src=page.image)
-                p=page.date
-                div !{page.comment}
+                p.dates=page.date
+                div.comments !{page.comment}
+    
+    script(src="chapter.js")
