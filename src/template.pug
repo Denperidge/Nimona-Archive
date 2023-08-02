@@ -6,14 +6,15 @@ html(lang="en")
         block title
             title Nimona
         link(rel="stylesheet" href="/src/stylesheet.scss")
-        link(rel="stylesheet" href="/src/themes/minimal.scss").theme#minimal
-        link(rel="stylesheet" href="/src/themes/movie.scss" disabled=true).theme#movie
         link(rel="shortcut icon", href="/src/themes/favicon.ico", type="image/x-icon")#favicon
-        img(src="/src/themes/minimal.ico", type="image/x-icon").favicon#minimal-favicon
-        img(src="/src/themes/movie.ico", type="image/x-icon").favicon#movie-favicon
+
+        each theme in themes 
+            link(rel="stylesheet" href=`/src/themes/${theme}/${theme}.scss` id=theme).theme
+            img(src=`/src/themes/${theme}/${theme}.ico` id=`${theme}-favicon`).favicon
+
     body
         video#background(autoplay=true, loop=true, muted=true)
-            source(src="/src/themes/movie.mp4" type="video/mp4")
+            source(src="/src/themes/movie/movie.mp4" type="video/mp4")
         nav
             ul
                 -

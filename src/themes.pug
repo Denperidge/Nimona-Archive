@@ -8,9 +8,9 @@ block content
     main
 
         form
-            each theme in ["minimal", "movie"]
-                input(type="radio" name="theme" id="input-#{theme}" value=theme).theme-selector
-                label(for=theme)=theme
+            each theme in themes
+                input(type="radio" name="theme" id=`input-${theme}` value=theme).theme-selector
+                label(for=`input-${theme}`)=theme
 
     
 

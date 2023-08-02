@@ -39,9 +39,23 @@ fs.readdirSync("extracted/").forEach((chapterName) => {
     
 });
 
+
+let themes = [];
+const dir = "src/themes/"
+fs.readdirSync(dir).forEach((name) => {
+    if (fs.lstatSync(dir + name).isDirectory()) {
+        themes.push(name);
+    }
+
+});
+
+
+
+
 module.exports = {
     locals: {
         chapters: chapters,
+        themes: themes,
         appendTitle: "| Nimona"
     }
 }
