@@ -20,3 +20,14 @@ function disableTheme(id, disable=true) {
     document.getElementById(id).disabled = disable; //("disabled", disable)
 }
 
+let selectedTheme = localStorage.getItem("theme") || "minimal";
+applyTheme(selectedTheme)
+
+const selectors = document.getElementsByClassName("theme-selector");
+for (let i = 0; i < selectors.length; i++) {
+    selectors[i].addEventListener("click", function(e) {
+        selectedTheme = e.target.value;
+        localStorage.setItem("theme", selectedTheme);
+        applyTheme(selectedTheme);
+    });
+}

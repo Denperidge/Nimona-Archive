@@ -1,0 +1,17 @@
+extends template.pug 
+
+block content 
+    
+    header 
+        h1 Nimona Archive
+    
+    main
+
+        form
+            each theme in ["minimal", "movie"]
+                input(type="radio" name="theme" id="input-#{theme}" value=theme).theme-selector
+                label(for=theme)=theme
+
+    
+
+    
