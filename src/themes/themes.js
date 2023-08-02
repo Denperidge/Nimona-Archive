@@ -17,6 +17,9 @@ function applyTheme(enabledTheme) {
 }
 
 function disableTheme(id, disable=true) {
-    document.getElementById("favicon").href = document.getElementById(selectedTheme + "-favicon").src;
+    document.getElementById("favicon").href = document.getElementById(id + "-favicon").src;
     document.getElementById(id).disabled = disable;
 }
+
+let selectedTheme = localStorage.getItem("theme") || "minimal";
+applyTheme(selectedTheme)

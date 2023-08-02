@@ -7,7 +7,4 @@ for (let i = 0; i < selectors.length; i++) {
     });
 }
 
-let selectedTheme = localStorage.getItem("theme") || "minimal";
-applyTheme(selectedTheme)
-
 document.querySelector("#input-" + localStorage.getItem("theme")).checked = true;
