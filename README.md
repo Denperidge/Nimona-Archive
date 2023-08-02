@@ -25,10 +25,11 @@ This is the repository for the Nimona Archive! The info here will be exclusively
 | ✔ | Add a notice to support the comics print release, N.D.'s stuff & (a) charit(y/ies)** |
 ||
 || **Customizability** |
-|  | Create theme: cinematic & static movie background |
+| ✔ | Create theme: cinematic movie background |
+|  | Create theme: static movie background |
 |  | Create theme: custom made repeating tile from the webcomic |
 |  | Create theme: original website |
-|  | Create theme: minimal |
+| ✔ | Create theme: minimal |
 |  | Allow hiding the authors' comments |
 
 *\*: These goals will be/have been accomplished in a seperate repository*
