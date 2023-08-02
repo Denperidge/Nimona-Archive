@@ -12,8 +12,13 @@
     position: fixed;
 }
 
+#animate {
+    display: initial;
+}
+
 body {
     color: #fff4ee;
+    background-color: black;
     background-image: url("/src/themes/movie/movie.png");
     background-position: center;
 }
