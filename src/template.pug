@@ -8,7 +8,9 @@ html(lang="en")
         link(rel="stylesheet" href="/src/stylesheet.scss")
         link(rel="stylesheet" href="/src/themes/minimal.scss").theme#minimal
         link(rel="stylesheet" href="/src/themes/movie.scss" disabled=true).theme#movie
-        link(rel="shortcut icon", href="/src/themes/favicon.ico", type="image/x-icon")
+        link(rel="shortcut icon", href="/src/themes/favicon.ico", type="image/x-icon")#favicon
+        img(src="/src/themes/minimal.ico", type="image/x-icon").favicon#minimal-favicon
+        img(src="/src/themes/movie.ico", type="image/x-icon").favicon#movie-favicon
     body
         video#background(autoplay=true, loop=true, muted=true)
             source(src="/src/themes/movie.mp4" type="video/mp4")
