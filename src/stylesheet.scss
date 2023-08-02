@@ -1,3 +1,12 @@
+@import "./themes/fonts/fonts";
+
+body {
+    font-family: "coconat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1, h2, h3, h4, h5, h6, a {
+    font-family: "combine", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 nav ul {
     display: flex;
     justify-content: space-between;

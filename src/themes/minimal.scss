@@ -1,0 +1,30 @@
+/*
+--dim-gray: #656764ff;
+--cordovan: #954644ff;
+--champagne-pink: #F7DBC5ff;
+--wenge: #685A57ff;
+--timberwolf: #E5DBD5ff;
+*/
+
+body {
+    color: #1A1525;
+    background-color: #fff4ee;
+}
+
+a {
+    &:link {
+        color: #DE342B;
+    }
+
+    &:visited {
+        color: #563939;
+    }
+
+    &:hover {
+        color: #1A1525;
+    }
+
+    &:active {
+        color: #B58776;
+    }
+}
