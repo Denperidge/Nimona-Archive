@@ -7,7 +7,8 @@ for (let i = 0; i < selectors.length; i++) {
     });
 }
 
-document.querySelector("#input-" + localStorage.getItem("theme")).checked = true;
+let currentTheme = localStorage.getItem("theme") || "minimal";
+document.querySelector("#input-" + currentTheme).checked = true;
 
 const shows = document.getElementsByClassName("show");
 for (let i = 0; i < shows.length; i++) {
