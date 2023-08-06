@@ -5,6 +5,17 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         block title
             title Nimona
+    
+        block opengraph
+            - let ogTitle = "The Nimona Archive"
+            - let ogDescription = "An archive for the Nimona webcomic, with extra accessibility & style!"
+            - let ogUrlAppend = ""
+        meta(property="og:title" content=ogTitle)
+        meta(property="og:description" content=ogDescription)
+        meta(property="og:url" content=`https://nimona.neonpastel.net/${ogUrlAppend}`)
+        meta(property="og:image" content="https://nimona.neonpastel.net/movie.png")
+        meta(property="og:type" content="website")
+
         link(rel="stylesheet" href="/src/stylesheet.scss")
         link(rel="shortcut icon", href="/src/themes/favicon.ico", type="image/x-icon")#favicon
 

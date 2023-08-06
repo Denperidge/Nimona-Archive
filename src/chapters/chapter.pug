@@ -4,6 +4,11 @@ block title
     block variables
     title Chapter #{chapter} #{appendTitle}
 
+block opengraph
+    - let ogTitle = `Chapter ${chapter} - The Nimona Archive`;
+    - let ogDescription = `Chapter ${chapter} of the Nimona webcomic, archived with extra accessibility & style!`;
+    - let ogUrlAppend = `chapters/chapter-${chapter}.html`;
+
 block content
     main#chapter
         - let pages = chapters[chapter]

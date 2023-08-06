@@ -8,10 +8,15 @@
     "start": "npm run clean && parcel serve src/index.pug",
     "build": "npm run clean && parcel build src/index.pug"
   },
+  "staticFiles": {
+    "staticPath": "./assets/static/"
+  },
+
   "devDependencies": {
     "@parcel/transformer-pug": "^2.9.3",
     "@parcel/transformer-sass": "^2.9.3",
     "jstransformer-markdown-it": "^3.0.0",
-    "parcel": "^2.9.3"
+    "parcel": "^2.9.3",
+    "parcel-reporter-static-files-copy": "^1.5.2"
   }
 }
