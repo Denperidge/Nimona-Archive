@@ -43,7 +43,7 @@ jobs:
         run: wget --user "$USER" --password "$PASS" "$URL"
       
       - name: Extract tar
-        run: tar -xf extracted.tar.gz
+        run: tar -xf patched.tar.gz
 
       - name: Build
         run: npm run build

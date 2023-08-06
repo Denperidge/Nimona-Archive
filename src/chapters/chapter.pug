@@ -7,10 +7,18 @@ block title
 block content
     main#chapter
         - let pages = chapters[chapter]
+        - let firstPage = true;
         each page in pages
-            div.page
-                img(src=page.image)
+            section.page
+                if firstPage
+                    img(src=chapterTitles[chapter], alt="Chapter " + chapter).chapterTitle
+                    - firstPage = false;
+
+                each panel in page.panels 
+                    img(src=panel.image, alt=panel.alt)
+                p.image-description Image description: !{page["image-description"].replaceAll("\n", "<br>")}
                 p.dates=page.date
                 div.comments !{page.comment}
+            br
     
     script(src="chapter.js")

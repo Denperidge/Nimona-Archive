@@ -27,13 +27,25 @@ nav ul {
     margin: auto;
     
     .page {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 850px;
+        gap: 7px;
+        background-color: white;
+        padding: 28px;
+        margin: auto;
+        
         img {
+            flex-grow: 0;
             display: block;
             margin: auto;
     
             width: 100%;
             max-width: max-content;
-            
+        }
+
+        .chapterTitle {
+            margin-top: -28px;
         }
     }
 }

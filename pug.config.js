@@ -17,8 +17,9 @@ function sortByNumbersInTheName(a, b) {
 
 
 let chapters = {};
-fs.readdirSync("extracted/").forEach((chapterName) => {
-    const chapterDir = "extracted/" + chapterName;
+let chapterTitles = {};
+fs.readdirSync("patched/").forEach((chapterName) => {
+    const chapterDir = "patched/" + chapterName;
     const chapterNumber = getNumbers(chapterName);
 
     let chapter = [];
@@ -27,16 +28,28 @@ fs.readdirSync("extracted/").forEach((chapterName) => {
         if (!fileName.endsWith(".json")) return;
 
         const jsonPath = chapterDir + "/" + fileName;
+        const pageDirPath = chapterDir + "/" + fileName.replace(".json", "");
         const pageData = JSON.parse(fs.readFileSync(jsonPath, {encoding: "utf-8"}));
 
-        pageData.image = "../../" + jsonPath.replace(".json", ".jpg");
+        let panels = [];
+        let panelImages = fs.readdirSync(pageDirPath).map(name => name.replace(".jpg", ""));
+        panelImages.forEach((panel) => {
+            let panelData = {};
+            panelData.image = "../../" + pageDirPath + "/" + panel + ".jpg";
+            panelData.alt = pageData["alt-texts"][panel];
+            panels.push(panelData)
+        });
+
+        pageData.panels = panels;
+
+
+
 
         chapter.push(pageData);
     });
 
     chapters[chapterNumber] = chapter;
-    
-    
+    chapterTitles[chapterNumber] = "../../" + chapterDir + "/chapter.jpg";
 });
 
 
@@ -46,7 +59,6 @@ fs.readdirSync(dir).forEach((name) => {
     if (fs.lstatSync(dir + name).isDirectory()) {
         themes.push(name);
     }
-
 });
 
 
@@ -55,6 +67,7 @@ fs.readdirSync(dir).forEach((name) => {
 module.exports = {
     locals: {
         chapters: chapters,
+        chapterTitles: chapterTitles,
         themes: themes,
         appendTitle: "| Nimona"
     }
