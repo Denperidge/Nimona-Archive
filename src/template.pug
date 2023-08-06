@@ -8,12 +8,13 @@ html(lang="en")
     
         block opengraph
             - let ogTitle = "The Nimona Archive"
-            - let ogDescription = "An archive for the Nimona webcomic, with extra accessibility & style!"
+            - let ogDescriptionPrepend = "An archive of the Nimona webcomic"
             - let ogUrlAppend = ""
+            - let ogImageAppend = "movie.png"
         meta(property="og:title" content=ogTitle)
-        meta(property="og:description" content=ogDescription)
+        meta(property="og:description" content=`${ogDescription}, for those who cannot access or read the printed version!`)
         meta(property="og:url" content=`https://nimona.neonpastel.net/${ogUrlAppend}`)
-        meta(property="og:image" content="https://nimona.neonpastel.net/movie.png")
+        meta(property="og:image" content=`https://nimona.neonpastel.net/${ogImageAppend}`)
         meta(property="og:type" content="website")
 
         link(rel="stylesheet" href="/src/stylesheet.scss")

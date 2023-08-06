@@ -49,7 +49,10 @@ fs.readdirSync("patched/").forEach((chapterName) => {
     });
 
     chapters[chapterNumber] = chapter;
-    chapterTitles[chapterNumber] = "../../" + chapterDir + "/chapter.jpg";
+
+    let chapterTitleImage = chapterDir + "/chapter.jpg"
+    fs.copyFileSync(chapterTitleImage, `assets/static/chapter-${chapterNumber}.jpg`)
+    chapterTitles[chapterNumber] = "../../" + chapterTitleImage;
 });
 
 

@@ -2,3 +2,4 @@ node_modules/
 patched/
 .parcel-cache/
 dist/
+assets/static/chapter-*.jpg
