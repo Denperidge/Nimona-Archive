@@ -16,10 +16,11 @@ function applyTheme(enabledTheme) {
         }
     }
 }
+window.applyTheme = applyTheme;
 
 function disableTheme(id, disable=true) {
     document.getElementById(id).disabled = disable;
 }
 
 let selectedTheme = localStorage.getItem("theme") || "minimal";
-applyTheme(selectedTheme)
+applyTheme(selectedTheme);

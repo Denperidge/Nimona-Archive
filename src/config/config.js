@@ -3,7 +3,7 @@ for (let i = 0; i < selectors.length; i++) {
     selectors[i].addEventListener("click", function(e) {
         let selected = e.target.value;
         localStorage.setItem("theme", selected);
-        applyTheme(selected);
+        window.applyTheme(selected);
     });
 }
 

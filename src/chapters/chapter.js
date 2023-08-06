@@ -8,8 +8,4 @@ for (let i = 0; i < shows.length; i++) {
         document.head.innerHTML += "<style>." + showId + " {display: none;}</style>"
     }
 }
-if (showComments == "false") {
-console.log("dontshow")
 
-}
-console.log("meow")
