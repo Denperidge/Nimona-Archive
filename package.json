@@ -4,7 +4,7 @@
   "description": "A fanmade archive for the webcomic Nimona!",
   "author": "Denperidge",
   "scripts": {
-    "clean": "rm -rf ./parcel-cache && rm -rf ./dist",
+    "clean": "rm -rf ./.parcel-cache && rm -rf ./dist",
     "start": "npm run clean && parcel serve src/index.pug",
     "build": "npm run clean && parcel build src/index.pug"
   },
