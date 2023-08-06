@@ -26,5 +26,8 @@ block content
                 p.dates=page.date
                 div.comments !{page.comment}
             br
+        
+        - if (chapter < Object.keys(chapters).length)
+            a(href=`chapter-${chapter + 1}`).next-chapter Next chapter
     
     script(src="chapter.js")
