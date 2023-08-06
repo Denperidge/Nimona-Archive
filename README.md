@@ -1,4 +1,5 @@
 # Nimona Archive
+[Visit it here](http://nimona.neonpastel.net/) - [Check out the patcher](https://github.com/Denperidge/Nimona-Archive-Patcher)
 
 This is the repository for the Nimona Archive! The info here will be exclusively for explaining how the site is generated and why it works like it does. For info on the project itself, you can check the website (or its corresponding files in this repo!)
 
@@ -14,14 +15,14 @@ This is the repository for the Nimona Archive! The info here will be exclusively
 | ✔ | Display the authors' upload comments written under some/most pages |
 ||
 || **Accessibility** |
-|  | Add alt text to *every* page* |
+|  | Add alt text to *every* page** |
 |  | Create an alt text glossary for the characters |
 |  | ... which is loaded in every page where the character appears |
 |  | Research & apply aria |
 |  | Ensure proper tab indexes |
 ||
 || **Support the original release & values as well as possible** |
-| ✔ | Remove N.D.'s deadname and replace it with their professional name (N.D.)* |
+| ✔ | Remove N.D.'s deadname and replace it with their professional name (N.D.)** |
 | ✔ | Add a notice to support the comics print release, N.D.'s stuff & (a) charit(y/ies)** |
 ||
 || **Customizability** |
@@ -32,23 +33,22 @@ This is the repository for the Nimona Archive! The info here will be exclusively
 | ✔ | Create theme: minimal |
 | ✔ | Allow hiding the authors' comments |
 
-*\*: These goals will be/have been accomplished in a seperate repository*
-*\*\*: Perhaps mermaids (trans youth) or trevor (homeless queer people)? Check if N.D. is fond of any specific charities*
+*\*: These goals will be/have been accomplished in a seperate & private repository (read [why](#patched-folder))*
+*\*\*: These goals will be/have been accomplished in the patcher repository. You can visit it here[https://github.com/Denperidge/Nimona-Archive-Patcher]*
 
 
 ## Tutorial: getting started
-Note: the following steps will require you to have a certain `extracted/` folder. You probably don't have that. Please check [here](#extracted-folder) as to why.
+Note: the following steps will require you to have a certain `patched/` folder. You probably don't have that. Please check [here](#patched-folder) as to why.
 ```bash
 git clone https://github.com/Denperidge/Nimona-Archive.git
-cp path/to/extracted/ Nimona-Archive/extracted/
+cp -r path/to/patched/ Nimona-Archive/patched/
 cd Nimona-Archive/
 npm install
 npm build  # Or use npm start to run an auto-reload server on localhost:1234 
 ```
 
-
 ## Discussions
-### Extracted folder
+### Patched folder
 tl;dr: due to legal reasons, I'm the only one who has it.
 
-So, I manually archived the entire webcomic and wrote a parser for it that creates the `extracted/` folder. For reasons that are hopefully obvious, this is kind of a legal grey zone. A grey zone I will happily tread to make the webcomic more readily available for people (especially for those with disabilities or limited library/shop access) but a grey zone nevertheless. So I'm already happy if I don't get sued over this in general! However if all the stars align and I get the blessing for publishing the raw archive instead of a cease & desist, I'll happily share the parser and the raw files.
+So, I manually archived the entire webcomic and wrote a parser and a [patcher](https://github.com/Denperidge/Nimona-Archive-Patcher) for it that creates the `patched/` folder containing all the panels & data. For reasons that are hopefully obvious, this is kind of a legal grey zone. A grey zone I will happily tread to make the webcomic more readily available for people (especially for those with disabilities or limited library/shop access) but a grey zone nevertheless. So I'm already happy if I don't get sued over this in general! However if all the stars align and I get the blessing for publishing the raw archive instead of a cease & desist, I'll happily share the parser and the raw files.
